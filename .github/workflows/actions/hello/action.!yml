@@ -1,0 +1,16 @@
+name: Hello World  
+author: Homer Simpson
+description: Simple Hello, Simpson Action 
+inputs: 
+  who-to-greet:
+    description: "Who to greet"
+    required: true
+    default: Homer Simpson
+outputs:
+  time:
+    description: "The greeting time"
+runs:
+   using: "node12"
+   main: "dist/index.js"
+
+ 
