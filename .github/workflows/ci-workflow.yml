@@ -8,4 +8,15 @@ jobs:
     name: Say hello
     steps:
       - run: echo "Hello, welcome to Simpson's job"
+  testing-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/hello
+        id: hello
+        with:
+          who-to-greet: "World"
+      - run: | 
+          echo "Time ${{ steps.hello.outputs.time}}}"  
+
 

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npx ncc build .github/workflows/actions/hello/index.js -o .github/workflows/actions/hello/dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/anubha22/play-github-actions-simpsons/issues"
   },
-  "homepage": "https://github.com/anubha22/play-github-actions-simpsons#readme"
+  "homepage": "https://github.com/anubha22/play-github-actions-simpsons#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@vercel/ncc": "^0.28.2",
+    "npm": "^7.9.0",
+    "npx": "^10.2.2"
+  }
 }
