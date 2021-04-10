@@ -1,1 +1,1 @@
-# play-github-actions-simpsons
+# Create an Github Action with Simpsons
