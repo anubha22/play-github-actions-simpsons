@@ -1,0 +1,11 @@
+name: ci-workflow
+
+on: [push]
+
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+    name: Say hello
+    steps:
+      - run: echo "Hello, welcome to Simpson's job"
+
