@@ -6056,7 +6056,7 @@ try {
   core.setOutput("time", time.toTimeString())
 
   const town = "Springfield, USA"
-  core.setOutput("town", town.toString())
+  core.setOutput("town", town)
   
   console.log("Let's have a look at what's in the github object")
   console.log(JSON.stringify(github, null, "\t"))

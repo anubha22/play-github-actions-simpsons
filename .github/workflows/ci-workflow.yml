@@ -10,7 +10,7 @@ jobs:
       - uses: ./.github/workflows/actions/hello
         id: hello
         with:
-          who-to-greet: "World"
+          who-to-greet: "Homer Simpson"
       - run: | 
           echo "Time in GMT ${{steps.hello.outputs.time}}" 
           echo "I live in ${{steps.hello.outputs.town}}" 
