@@ -12,7 +12,7 @@ jobs:
         with:
           who-to-greet: "World"
       - run: | 
-          echo "Time ${{ steps.hello.outputs.time}}}" 
-          echo "I live in ${{steps.hello.outputs.town" 
+          echo "Time ${{ steps.hello.outputs.time}}" 
+          echo "I live in ${{steps.hello.outputs.town}}" 
 
 
