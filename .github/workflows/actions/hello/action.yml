@@ -7,6 +7,10 @@ inputs:
     description: "Who to greet"
     required: true
     default: Homer Simpson
+  what-to-say:
+    description: "What to say to a person"
+    required: true
+    default: How about, saying Hello?
 outputs:
   time:
     description: "The greeting time"
