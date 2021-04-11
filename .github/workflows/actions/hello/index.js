@@ -12,7 +12,8 @@ try {
   const time = new Date()
   core.setOutput("time", time.toTimeString())
 
-  core.setOutput("town", "Springfield, USA")
+  const town = "Springfield, USA"
+  core.setOutput("town", town)
   
   console.log("Let's have a look at what's in the github object")
   console.log(JSON.stringify(github, null, "\t"))
