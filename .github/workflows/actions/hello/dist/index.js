@@ -6055,6 +6055,7 @@ try {
   const time = new Date()
   core.setOutput("time", time.toTimeString())
   
+  console.log("Let's have a look at what's in the github object")
   console.log(JSON.stringify(github, null, "\t"))
 
 } catch(error) {
