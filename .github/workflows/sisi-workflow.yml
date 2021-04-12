@@ -10,12 +10,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Show file contents 
+        run: |
+          echo "Show directory contents"
+          ls la
       - name: Continous compliance
         uses: redbadger/continous-compliance@v0.4
         id: comply
         with:
           tests-folder: '/test-folder'
       - run: | 
-          echo "Show directory contents"
-          ls la
           echo "Compliance URL ${{steps.comply.outputs.compliance-evidence-url}}" 
