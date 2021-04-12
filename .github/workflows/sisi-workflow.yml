@@ -14,4 +14,4 @@ jobs:
         uses: redbadger/continous-compliance@v0.1
         id: hello
         with:
-          who-to-greet: "Marge Simpson"
+          tests-folder: '/src/test-folder'
