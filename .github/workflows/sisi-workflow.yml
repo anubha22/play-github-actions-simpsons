@@ -12,8 +12,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Continous compliance
         uses: redbadger/continous-compliance@v0.4
-        id: hello
+        id: comply
         with:
           tests-folder: '/src/test-folder'
       - run: | 
-          echo "Compliance URL ${{steps.hello.outputs.compliance-evidence-url}}" 
+          echo "Compliance URL ${{steps.comply.outputs.compliance-evidence-url}}" 
