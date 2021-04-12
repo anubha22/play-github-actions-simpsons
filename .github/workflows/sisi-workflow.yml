@@ -18,6 +18,6 @@ jobs:
         uses: redbadger/continous-compliance@v0.4
         id: comply
         with:
-          tests-folder: '/test-folder'
+          tests-folder: 'test-folder'
       - run: | 
           echo "Compliance URL ${{steps.comply.outputs.compliance-evidence-url}}" 
