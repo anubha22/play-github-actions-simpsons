@@ -15,10 +15,11 @@ jobs:
           echo "Show directory contents"
           ls -la
       - name: Continous compliance
-        uses: redbadger/continous-compliance@v0.4
+        uses: redbadger/continous-compliance@v0.6
         id: comply
         with:
           tests-folder: 'test-folder'
+          doc-folder: 'doc-folder'
       - run: | 
           echo "Compliance URL ${{steps.comply.outputs.compliance-evidence-url}}" 
           echo "Show directory contents again"
