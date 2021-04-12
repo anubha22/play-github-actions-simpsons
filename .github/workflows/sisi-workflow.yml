@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Continous compliance
-        uses: redbadger/continous-compliance@v0.1
+        uses: redbadger/continous-compliance@v0.4
         id: hello
         with:
           tests-folder: '/src/test-folder'
