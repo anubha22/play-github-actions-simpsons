@@ -15,3 +15,5 @@ jobs:
         id: hello
         with:
           tests-folder: '/src/test-folder'
+      - run: | 
+          echo "Time in GMT ${{steps.hello.outputs.compliance-evidence-url}}" 
