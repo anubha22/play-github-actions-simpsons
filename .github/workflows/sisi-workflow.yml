@@ -21,3 +21,5 @@ jobs:
           tests-folder: 'test-folder'
       - run: | 
           echo "Compliance URL ${{steps.comply.outputs.compliance-evidence-url}}" 
+          echo "Show directory contents again"
+          ls -la
