@@ -13,7 +13,7 @@ jobs:
       - name: Show file contents 
         run: |
           echo "Show directory contents"
-          ls la
+          ls -la
       - name: Continous compliance
         uses: redbadger/continous-compliance@v0.4
         id: comply
