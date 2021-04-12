@@ -12,3 +12,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Continous compliance
         uses: redbadger/continous-compliance@v0.1
+        id: hello
+        with:
+          who-to-greet: "Marge Simpson"
