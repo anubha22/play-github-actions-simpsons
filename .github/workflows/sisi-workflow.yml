@@ -24,3 +24,6 @@ jobs:
           echo "Compliance URL ${{steps.comply.outputs.compliance-evidence-url}}" 
           echo "Show directory contents again"
           ls -la
+          echo "Go into compliance folder"
+          cd compliance
+          ls -la
