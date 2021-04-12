@@ -19,7 +19,7 @@ jobs:
         id: comply
         with:
           tests-folder: 'test-folder'
-          doc-folder: 'doc-folder'
+          docs-folder: 'doc-folder'
       - run: | 
           echo "Compliance URL ${{steps.comply.outputs.compliance-evidence-url}}" 
           echo "Show directory contents again"
